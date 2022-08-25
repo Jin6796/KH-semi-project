@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+.left_line {
+  width: 20px;
+  height: 100%;
+  background: rgba(15, 2, 90, 0.726);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+}
+
+ul, li { /* 텍스트 옆에 콩알 없애기 */
+  list-style: none;
+}
+
+a { /* 텍스트 아래에 줄 없애기 */
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: linear-gradient(to right, rgb(14, 1, 71), rgb(36, 1, 189));
+  /* background-color: rgb(14, 1, 71); */
+  padding: 1px;
+  margin: 0px;
+  color: white;
+}
+
+.header {
+  padding: 1px;
+}
+
+.dropdown-toggle::after {
+  display:none;
+}
+
+.header_container {
+  border-bottom: 2px solid #aaaaaa; /* 2 메뉴아래 구분선 */
+  width: 100%; /* 1 */
+  display: flex; /* 3 */
+  z-index: 2;          /* 헤더까지 영상이 올라오도록 하기 */
+  top: 0px;
+  left: 0px;
+  padding: 1px;
+}
+
+.container-fluid{
+  border-bottom: 2px solid #aaaaaa; /* 2 메뉴아래 구분선 */
+
+}
+
+.navbar-brand { /* 로고 */
+  margin: 0rem 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 3%;
+  margin-right: 10%;
+  padding: 1%;
+  color: white;
+  font-weight: bold;
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+}
+
+.navbar-brand:hover{
+  color: rgba(195, 195, 255, 0.459);
+}
+
+#nav-item{
+  margin-left: 2%;
+  white-space:nowrap;
+}
+
+#navbar01{
+  letter-spacing: 0.1rem;
+}
+
+.nav-link{
+  color: white;
+  font-size: 105%;
+}
+
+#nav-link-eng{
+  font-family: 'Dosis', sans-serif;
+}
+
+.nav-link:hover{
+  border-radius: 5px;
+  /* text-decoration:underline;
+  text-underline-position:under; 밑줄 */ 
+  font-weight: bold;
+  color: white;
+}
+
+.dropdown-item{
+  color: white;
+  font-size: smaller;
+}
+.dropdown-item:hover{
+  background-color: rgba(235, 235, 235, 0.76);
+}
+
+.dropdown-menu{
+  background: linear-gradient(to right, rgba(35, 1, 189, 0.726), rgba(14, 1, 71, 0.726));
+}
+
+.header_right { /* 로그인 */
+  min-width: max-content;
+  margin: 0rem 1.0rem;
+  position: fixed;
+  top: 2%;
+  right: 0%;
+}
+
+.header_right button {
+  background: none;
+  border: white solid 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: smaller;
+}
+
+.navbar-toggler{
+  /* border: solid red; */
+  margin-bottom: 1%;
+  background: none;
+  border: 0px;
+  margin-right: 1%;
+}
+
+.custom-toggler.navbar-toggler {
+  color: rgb(255,102,203);
+}
+
+.main_container{
+  background-color: white;
+  border-bottom: 2px solid #aaaaaa; /* 2 메뉴아래 구분선 */
+  padding: 3% 7%;
+}
+
+.gx{
+  display: flex;
+  justify-content: space-around;
+  margin: 1%;
+}
+
+.gx_img{
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px rgb(57, 54, 70);
+  margin: 1%;
+}
+
+.gx_info{
+  display: block;
+  width: 30%;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(40, 18, 139), rgba(43, 2, 224, 0.795));
+  box-shadow: 0px 0px 10px 1px rgb(57, 54, 70);
+  margin: 1%;
+  padding: 1% 0%;
+}
+
+.gx_info h2{
+  text-align: center;
+  font-weight: lighter;
+}
+
+.gx_info p{
+  width: 80%;
+  margin: 10%;
+  font-weight: lighter;
+  font-size: larger;
+  /* text-overflow: ellipsis; */
+  white-space: normal;
+  overflow: auto;
+  max-height: 70%;
+}
+
+.footer_container {
+  display: flex;
+  justify-content: space-between; 
+  padding: 1% 2.5%;
+
+}
+
+.foot_detail{
+  font-family: 'Dosis', sans-serif;
+}

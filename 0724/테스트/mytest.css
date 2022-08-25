@@ -1,0 +1,97 @@
+
+ul { /* 텍스트 옆에 콩알 없애기 */
+  list-style: none;
+}
+
+a { /* 텍스트 아래에 줄 없애기 */
+  text-decoration: none;
+  color: black;
+}
+
+.main_nav{
+  border:none;
+  border:0px;
+  margin:0px;
+  padding:0px;
+  font: "sans-serif";
+  font-size:18px;
+  }
+  
+.header_ul01{
+  background: #666;
+  height:100px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  
+}
+
+.header_ul01 li{
+  padding:0px;
+  display: inline-block;
+  
+}
+
+.mega {
+  position: absolute;
+  display: block;
+  width: 100%;
+  left: 0;
+}
+
+.header_ul01 li a{
+  background: lightgray;
+  color:#fff;
+  color: white;
+  display:block;
+  line-height:100px;
+  margin:10px;
+  padding:0px 25px;
+  text-align:center;
+  }
+  
+.header_ul01 li a:hover, 
+.header_ul01 li:hover a{
+  background: rgb(31,31,31);
+  color:#FFFFFF;
+}
+  
+.header_ul02{
+  background: blue;
+  display:none; 
+  height:auto;
+  border:0px;
+  position:absolute;
+  /*top:1em;
+  /*left:0;*/
+}
+  
+.header_ul01 li:hover ul{
+  display:block;
+}
+  
+.header_ul02 li {
+  background: red;
+  margin:10px;
+  padding:0px;
+  width:80px;
+}
+
+.header_ul01 li:hover li a{
+  background:none;
+}
+  
+.main_nav li ul a{
+  display:block;
+  height:80px;
+  font-size:14px;
+  margin:0px;
+  padding:0px 10px 0px 15px;
+  text-align:left;
+}
+  
+.main_nav li ul a:hover, 
+.main_nav li ul li:hover a{
+  background: aqua;
+  border:0px;
+}
